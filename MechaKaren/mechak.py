@@ -67,7 +67,9 @@ def anime(category):
 
 def math(equation):
         lol = requests.post(
-            f"https://api.mechakaren.xyz/v1/math?equation={equation}")
+            "https://api.mechakaren.xyz/v1/math",
+            json = {'equation': equation}
+        )
         one = lol.json()
         if lol.status_code == 400:
             return print(Fore.RED + 'API Raised an Exception: %s' % (one['error']) + Style.RESET_ALL)
