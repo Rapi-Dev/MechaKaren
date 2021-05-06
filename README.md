@@ -31,18 +31,25 @@ import MechaKaren
 from MechaKaren import mechak
 
 mechak.config(api_key="")
+# Get an API key at https://api.mechakaren.xyz.
+## An api key is not needed for the math endpoint.
 
 image_response = mechak.image(filter_type="invert", image_url="https://host.galactic-hosting.xyz/files/9tMmLv2M7f0UfewoTQ4p2M1M2.png")
+# The following, returns a BytesIO object.
 mechak.save_filter_image(image_response)
+## This lets you download the responded image.
 
 chatbot_response = mechak.chatbot(message="Hello!")
 print(chatbot_response)
+# Returns the AI response.
 
 anime_response = mechak.anime(category="slap")
 print(anime_response)
+# Returns an image url.
 
 math_response = mechak.math(equation="one plus one")
 print(math_response)
+# Returns the math answer.
 ```
 
 ## Author
