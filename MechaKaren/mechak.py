@@ -66,14 +66,8 @@ def anime(category):
 # --------------------------------------------------------
 
 def math(equation):
-    if key is None:
-        return print(Fore.RED + 'ERROR: You have not specified an API Key! Get one at https://api.mechakaren.xyz.' + Style.RESET_ALL)
-    else:
         lol = requests.post(
-            "https://api.mechakaren.xyz/v1/math",
-            headers = {'Authorization': key},
-            json = {'equation': equation}
-        )
+            f"https://api.mechakaren.xyz/v1/math?equation={equation}")
         one = lol.json()
         if lol.status_code == 400:
             return print(Fore.RED + 'API Raised an Exception: %s' % (one['error']) + Style.RESET_ALL)
@@ -125,20 +119,14 @@ def image(filter_type, image_url):
             _bytes = return_img(image)
             return _bytes
 
-# --------------------------------------------------------
 
 import random
 import string
-
-
-# --------------------------------------------------------
-
 def get_random_string(length):
     letters = string.ascii_letters + string.digits
     result_str = ''.join(random.choice(letters) for i in range(length))
     return result_str
 
-# --------------------------------------------------------
 
 def save_filter_image(filter_responce=None):
     if filter_responce == None:
@@ -147,5 +135,3 @@ def save_filter_image(filter_responce=None):
         pass
         kek = get_random_string(15)
         open(f"img-{kek}.png", 'wb').write(filter_responce.read())
-
-# --------------------------------------------------------
