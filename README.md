@@ -12,7 +12,7 @@
   </a>
 </p>
 
-### 🏠 [Homepage](https://github.com/Rapi-Dev/mechakaren.py)
+### 🏠 [Homepage](https://github.com/Rapi-Dev/MechaKaren.py)
 
 ## Key Features
 - Easy To Learn!
@@ -61,7 +61,7 @@ print(math_response)
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/mechakaren.py/RapiDB/issues). 
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Rapi-Dev/MechaKaren.py/issues). 
 
 ## Show your support
 
@@ -70,4 +70,4 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2021 [Daftscientist](https://github.com/Daftscientist) | [S4qib](https://github.com/S4qib).<br />
-This project is [MIT](https://github.com/Rapi-Dev/mechakaren.py/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/Rapi-Dev/MechaKaren.py/blob/main/LICENSE) licensed.
