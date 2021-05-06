@@ -22,7 +22,7 @@
 ## Install
 
 ```sh
-pip install mechakaren.py
+pip install MechaKaren
 ```
 
 ## Examples
