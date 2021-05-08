@@ -121,14 +121,19 @@ def image(filter_type, image_url):
             _bytes = return_img(image)
             return _bytes
 
+# --------------------------------------------------------
 
 import random
 import string
+
+# --------------------------------------------------------
+
 def get_random_string(length):
     letters = string.ascii_letters + string.digits
     result_str = ''.join(random.choice(letters) for i in range(length))
     return result_str
 
+# --------------------------------------------------------
 
 def save_filter_image(filter_responce=None):
     if filter_responce == None:
@@ -137,3 +142,5 @@ def save_filter_image(filter_responce=None):
         pass
         kek = get_random_string(15)
         open(f"img-{kek}.png", 'wb').write(filter_responce.read())
+
+# --------------------------------------------------------
