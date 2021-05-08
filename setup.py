@@ -10,7 +10,7 @@ setuptools.setup(
     description="Free to use API Wrapper for MechaKaren API.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Rapi-Dev/MechaKaren.py",
+    url="https://github.com/Rapi-Dev/MechaKaren.",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
