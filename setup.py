@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8", errors="ignore") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="MechaKaren",
+    name="MechaK",
     version="1.0",
     author=["RapiDevelopment"],
     description="Free to use API Wrapper for MechaKaren API.",
